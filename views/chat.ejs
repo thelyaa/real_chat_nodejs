@@ -1,0 +1,17 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script> 
+    <script language="javascript" src="/js/chat_script.js"></script>
+    
+</head>
+
+<form class="chatScreen" id="chatForm">
+    <div class="chatScreen-messagesBlock"></div>
+    <input type="text" placeholder="Написать сообщение" id="message">
+    <input type="button" value="Отправить" onclick="sendMessage(); return false">
+    <input type="button" value="Выйти" onclick="logout()">
+</form>
+<div class="chatMessages">
+    <label id="username"></label>
+    <div id="messageText"></div>
+</div>

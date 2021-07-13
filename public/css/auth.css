@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.authScreen {
+    width: 400px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: darkcyan;    
+}
+
+.authScreen_inputBlock {
+    height: 180px;
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.authScreen_emailDiv {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.authScreen_loginInput {
+    display: flex;
+    width: 270px;
+    height: 30px;
+    border: 1px solid;
+    border-color: darkcyan;
+    border-radius: 3px;
+}
+
+.authScreen_buttonDiv {
+    margin-top: 10px;
+}
+
+.authScreen_buttonDiv a {
+    margin-left: 65px;
+}
+
+.authScreen_buttonDiv input {
+    height: 30px;
+    width: 70px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 146px;
+}
+
+.registration_buttonDiv {
+    margin-top: 10px;
+    margin-left: 144px;
+}
+
+.registration_buttonDiv input {
+    height: 25px;
+    width: 70px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#emailError, #passwordError{
+    color: red;
+    margin-right: 100px;
+    margin-top: 10px;
+    font-size: 11pt;
+}

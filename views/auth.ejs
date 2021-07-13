@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/auth.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script language="javascript" src="/js/singIn_script.js"></script>
+        <title>Sign in</title>
+    </head>
+    
+    <body>
+        <form class="authScreen" onsubmit="signInFormisValid(); return false">
+            
+            <div class="authScreen_inputBlock">
+                <div class="authScreen_emailDiv">
+                    <label for="email">E-mail</label>
+                    <input class="authScreen_loginInput" type="email" id="email">
+                    <div id="emailError"></div>
+                </div>
+            
+                <div class="authScreen_passwordDiv">
+                    <label for="password">Password</label>
+                    <input class="authScreen_loginInput" type="password" id="password" value="Qwerty,123">
+                    <div id="passwordError"></div>       
+                </div>   
+            </div>
+    
+            <div class="authScreen_buttonDiv">
+                <a href="registration.html">Sign up</a>
+                <input type="submit" value="Sign in">
+<!--                <input type="button" value="Sign up" onclick="signUpHandler()">-->
+            </div>
+            
+            <div id="chatScreen" style="visibility: hidden">
+                <div class="chatScreen-messagesBlock"></div>
+                <input type="text" placeholder="Написать сообщение" id="message">
+            </div>
+        </form>
+    </body>
+</html>
